@@ -81,7 +81,7 @@ main section#sur-mesure h2 {
 main section#sur-mesure img {
     display: block;
     margin: 0 auto;
-    max-width: 22rem;
+    max-width: 100%;
 }
 
 /* ACOMPTE */
