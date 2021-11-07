@@ -1,33 +1,3 @@
-html {
-    scroll-behavior: smooth;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: #222;
-}
-
-h3 {
-    font-size: 1.8rem;
-}
-
-dt {
-    font-size: 1.4rem;
-}
-
-header {
-    position: fixed;
-    width: 100%;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-}
-
 /* NAV */
 header nav {
     display: flex;
@@ -91,6 +61,7 @@ main section#menu {
 
 main section#menu h2 {
     font-size: 2.8rem;
+    font-weight: bolder;
 }
 
 main section#menu>ul {
@@ -98,14 +69,25 @@ main section#menu>ul {
     justify-content: space-around;
     flex-wrap: wrap;
 }
+main section#menu ul li section h3{
+    font-size: 1.8rem;
+    font-weight: bolder;
+    margin: 3rem 0 1.2rem;
+}
+main section#menu ul li section dl dt {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    margin: 1.8rem 0 .4rem;
 
+}
 main section#menu ul li section dl dd {
     display: inline-block;
+    line-height: 1.4rem;
 }
 
 /* SUR-MESURE */
 main section#sur-mesure {
-    padding: 4rem;
+    padding: 2rem;
     background-color: #f7efe3;
     margin: 0 auto;
 
@@ -113,9 +95,10 @@ main section#sur-mesure {
 
 main section#sur-mesure h2 {
     text-align: center;
-    font-weight: bold;
-    padding: 0;
+    padding: 2rem;
     margin: 0;
+    font-size: 1.4rem;
+    font-weight: bolder;
 }
 
 main section#sur-mesure img {
@@ -130,7 +113,6 @@ main section#sur-mesure img {
 /* ACOMPTE */
 main section#acompte {
     padding: 2rem;
-    max-width: 60%;
     margin: 0 auto;
 
 }
@@ -139,6 +121,8 @@ main section#acompte h2 {
     padding: 2rem 0 0;
     margin: 0;
     color: #222;
+    font-size: 1.4rem;
+    font-weight: bolder;
 }
 
 main section#acompte p {
@@ -154,6 +138,7 @@ footer {
     justify-content: space-between;
     color: #FAFAFA;
     background-color: #aa7a63;
+    max-width: 100%;
 }
 
 footer i {
@@ -168,25 +153,45 @@ footer p {
 }
 
 footer>ul {
+    max-width: 100%;
+
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
-    padding: 8rem 8rem 2rem;
+    padding: 4rem 2rem 2rem;
 }
 
 
-footer ul li {padding: 1rem;
+footer ul li {
+    padding: 1rem;
 }
 
+footer ul li img{
+    max-width: 12rem;
+}
+footer ul li section h2{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    font-weight: bolder;
+}
 footer ul li section ul {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-footer ul li section ul li{
+footer ul li section ul li {
     padding: 0 0 1rem;
+    line-height: 1.4rem;
+    width: 100%;
+    text-align: center;
 }
 
-footer p a{
+footer p {
+    padding: 1rem;
+    line-height: 1.4rem;
+}
+footer p a {
     color: #FAFAFA;
 }
