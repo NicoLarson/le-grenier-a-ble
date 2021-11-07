@@ -25,42 +25,23 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="./css/style.css">
-  <script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
-  <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://bootswatch.com/5/cosmo/bootstrap.min.css">
   <meta name="theme-color" content="#fafafa">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Parisienne&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <header>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="./icon.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
-          aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarColor02">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#menu">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#acompte">Commander</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <nav>
+      <img src="./icon.png" alt="logo Le Grenier à blé">
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#acompte">Commandez</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-
   </header>
   <main>
     <section id="welcome">
@@ -158,7 +139,8 @@
     </section>
     </section>
     <section id="acompte">
-      <h2>Commandez</h2>
+      <h2>Payez votre acompte de 30,00€</h2>
+      <p>(Pour vos commandes personnalisées)</p>
       <div id="smart-button-container">
         <div style="text-align: center;">
           <div id="paypal-button-container"></div>
@@ -209,27 +191,35 @@
     </section>
   </main>
   <footer>
-    <section>
-      <h2>Nous sommes aussi ici</h2>
-      <ul>
-        <li><i class="fab fa-facebook-square"></i></li>
-        <li><i class="fab fa-instagram-square"></i></li>
-      </ul>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <ul>
-        <li>Tel: 0594 12 34 45</li>
-        <li>Email: contact@le-grenier-a-ble.gf</li>
-        <li>
-          <address>
-            Le Grenier à blé <br>
-            Cayenne
-          </address>
-        </li>
-      </ul>
-    </section>
-    <p>&copy;Copyright - The Best Service of French Guiana - 2022</p>
+    <ul>
+      <li>
+        <section>
+          <h2>Suivez-nous sur:</h2>
+          <ul>
+            <li><i class="fab fa-facebook-square"></i></li>
+            <li><i class="fab fa-instagram-square"></i></li>
+          </ul>
+        </section>
+      </li>
+      <li>
+        <section id="contact">
+          <h2>Contact</h2>
+          <ul>
+            <li>
+              <address>
+                Boulangerie-Pâtisserie Le Grenier à Blé <br>
+                1ère entrée cité Zéphir <br>
+                Route de Montabo <br>
+                97300 Cayenne
+              </address>
+            </li>
+            <li>Tél : 0594 29 10 25</li>
+            <li>Email: tsang.legab2006@gmail.com</li>
+          </ul>
+        </section>
+      </li>
+    </ul>
+    <p>&copy;Copyright - <a href="https://nicolarson.github.io/the_best_guiana_agency/">The Best Service of French Guiana</a> - 2022</p>
   </footer>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

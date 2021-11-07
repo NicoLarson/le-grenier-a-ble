@@ -1,5 +1,22 @@
+html {
+    scroll-behavior: smooth;
+}
+
 li {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+dt {
+    font-size: 1.4rem;
 }
 
 header {
@@ -7,11 +24,31 @@ header {
     width: 100%;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* NAV */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #FAFAFA;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 2rem;
+}
+
 header nav img {
     width: 4rem;
     height: 4rem;
+    padding: 1rem;
 }
 
+/* WELCOME */
 main section#welcome {
     height: 100vh;
     width: 100%;
@@ -49,7 +86,7 @@ main section#welcome p {
 main section#menu {
     padding: 4rem 0;
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 60%;
 }
 
 main section#menu h2 {
@@ -70,38 +107,52 @@ main section#menu ul li section dl dd {
 main section#sur-mesure {
     padding: 4rem;
     background-color: #f7efe3;
+    margin: 0 auto;
 
 }
 
 main section#sur-mesure h2 {
-    padding: 0 0 2rem;
     text-align: center;
     font-weight: bold;
+    padding: 0;
+    margin: 0;
 }
 
 main section#sur-mesure img {
     display: block;
     margin: 0 auto;
-    max-width: 100%;
+    max-height: 100vh;
     border-radius: 10px;
-
+    max-width: 60%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 /* ACOMPTE */
 main section#acompte {
     padding: 2rem;
+    max-width: 60%;
+    margin: 0 auto;
+
 }
 
 main section#acompte h2 {
-    padding: 2rem 0;
+    padding: 2rem 0 0;
+    margin: 0;
     color: #222;
+}
+
+main section#acompte p {
+    padding: 0;
+    margin: 0 0 2rem;
+
 }
 
 /* FOOTER */
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     color: #FAFAFA;
-
-    padding: 4rem;
     background-color: #aa7a63;
 }
 
@@ -114,4 +165,28 @@ footer p {
     text-align: center;
     color: #FAFAFA;
 
+}
+
+footer>ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 8rem 8rem 2rem;
+}
+
+
+footer ul li {padding: 1rem;
+}
+
+footer ul li section ul {
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul li section ul li{
+    padding: 0 0 1rem;
+}
+
+footer p a{
+    color: #FAFAFA;
 }
