@@ -1,5 +1,5 @@
-:root{
---color-main:#aa7a63;
+:root {
+    --color-main: #aa7a63;
 }
 
 /* NAV */
@@ -113,9 +113,9 @@ main section#sur-mesure {
     padding: 2rem;
     background-color: #f7efe3;
     margin: 0 auto;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 main section#sur-mesure h2 {
@@ -138,12 +138,13 @@ main section#sur-mesure img {
 main section#sur-mesure p {
     text-align: center;
 }
-main section#sur-mesure p a{
+
+main section#sur-mesure p a {
     display: block;
     padding: .6rem .8rem;
     font-weight: bold;
     font-size: 1.214rem;
-    background-color:#4CAF50;
+    background-color: #4CAF50;
     color: #FAFAFA;
     border-radius: 8px;
     line-height: 1.618rem;
@@ -207,12 +208,15 @@ footer ul li section ul li {
     width: 100%;
     text-align: center;
 }
-footer ul li section ul li a{
+
+footer ul li section ul li a {
     color: #FAFAFA;
 }
-footer ul li section ul li a i{
+
+footer ul li section ul li a i {
     margin: 0 .809rem;
 }
+
 footer p {
     padding: 1rem;
     line-height: 1.4rem;
@@ -220,4 +224,117 @@ footer p {
 
 footer p a {
     color: #FAFAFA;
+}
+
+
+/* DESKTOP VERSION */
+
+@media screen and (min-width: 770px) {
+    h2 {
+        font-size: 3.2rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    dt {
+        font-size: 1.8rem;
+    }
+
+    dd {
+        font-size: 1.2rem;
+    }
+
+    /* HEADER */
+    header nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav a img {
+        height: 8.09rem;
+        width: 8.09rem;
+    }
+
+    header nav ul {
+        width: initial;
+    }
+
+    header nav ul li {
+        font-size: 2rem;
+        padding: 0 4rem 0 0;
+    }
+
+    /* WELCOME */
+
+    main section#welcome h2 {
+        font-size: 12rem;
+    }
+
+    /* MENU */
+    main>section#menu {
+        max-width: 60%;
+        padding: 12rem 0;
+    }
+
+    main section#menu>ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    main section#menu ul li.product {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 20vw;
+    }
+
+    /* SUR-MESURE */
+    main section#sur-mesure {
+        padding: 8rem;
+    }
+
+    main section#sur-mesure h2 {
+        font-size: 3.2rem;
+    }
+
+    main section#sur-mesure img {
+        width: 32rem;
+    }
+
+    main section#sur-mesure p a {
+        display: inline-block;
+        font-size: 2rem;
+        padding: 2rem;
+        margin: 2rem;
+    }
+    main section#sur-mesure p{
+        font-size: 1.4rem;
+    }
+    /* FOOTER */
+    footer{
+        padding: 8rem 8rem 0;
+    }
+    footer>ul {
+    align-items: flex-start;
+    }
+
+    footer ul li img {
+        max-width: 60%;
+    }
+    
+    footer ul li section h2 {
+font-size: 2rem;
+}
+footer ul li section ul li {
+font-size: 1.4rem;
+line-height: 2rem;
+text-align: start;
+}
+footer p {
+    padding: 2rem;
+    color: #FAFAFA;
+    font-size: 1rem;
+}
+ 
 }
