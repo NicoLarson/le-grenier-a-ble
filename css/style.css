@@ -1,26 +1,40 @@
+:root{
+--color-main:#aa7a63;
+}
+
 /* NAV */
 header nav {
+    position: fixed;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     background-color: #FAFAFA;
+    z-index: 1;
+    transition: .6s;
 }
 
-header nav ul li {
-    display: inline-block;
-    margin: 0 2rem;
+header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 header nav img {
-    width: 4rem;
-    height: 4rem;
-    padding: 1rem;
+    width: 4.045rem;
+    height: 4.045rem;
+    padding: .405rem;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 0 0 .809rem 0;
 }
 
 /* WELCOME */
 main section#welcome {
-    height: 100vh;
+    height: calc(100vh);
     width: 100%;
     background-image: url("../img/loaf-2436370_1920.jpg");
     background-attachment: fixed;
@@ -69,20 +83,29 @@ main section#menu>ul {
     justify-content: space-around;
     flex-wrap: wrap;
 }
-main section#menu ul li section h3{
+
+main section#menu ul li section h3 {
     font-size: 1.8rem;
     font-weight: bolder;
     margin: 3rem 0 1.2rem;
 }
+
 main section#menu ul li section dl dt {
     font-size: 1.4rem;
     font-weight: bolder;
     margin: 1.8rem 0 .4rem;
 
 }
+
 main section#menu ul li section dl dd {
     display: inline-block;
     line-height: 1.4rem;
+}
+
+main section#menu ul li.product {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 .809rem;
 }
 
 /* SUR-MESURE */
@@ -90,7 +113,9 @@ main section#sur-mesure {
     padding: 2rem;
     background-color: #f7efe3;
     margin: 0 auto;
-
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
 
 main section#sur-mesure h2 {
@@ -103,32 +128,25 @@ main section#sur-mesure h2 {
 
 main section#sur-mesure img {
     display: block;
-    margin: 0 auto;
+    margin: 1.618rem auto;
     max-height: 100vh;
-    border-radius: 10px;
-    max-width: 60%;
+    border-radius: 8px;
+    width: 80%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-/* ACOMPTE */
-main section#acompte {
-    padding: 2rem;
-    margin: 0 auto;
-
+main section#sur-mesure p {
+    text-align: center;
 }
-
-main section#acompte h2 {
-    padding: 2rem 0 0;
-    margin: 0;
-    color: #222;
-    font-size: 1.4rem;
-    font-weight: bolder;
-}
-
-main section#acompte p {
-    padding: 0;
-    margin: 0 0 2rem;
-
+main section#sur-mesure p a{
+    display: block;
+    padding: .6rem .8rem;
+    font-weight: bold;
+    font-size: 1.214rem;
+    background-color:#4CAF50;
+    color: #FAFAFA;
+    border-radius: 8px;
+    line-height: 1.618rem;
 }
 
 /* FOOTER */
@@ -167,14 +185,16 @@ footer ul li {
     padding: 1rem;
 }
 
-footer ul li img{
+footer ul li img {
     max-width: 12rem;
 }
-footer ul li section h2{
+
+footer ul li section h2 {
     font-size: 1.6rem;
     padding: 1rem 0;
     font-weight: bolder;
 }
+
 footer ul li section ul {
     display: flex;
     flex-direction: column;
@@ -187,11 +207,17 @@ footer ul li section ul li {
     width: 100%;
     text-align: center;
 }
-
+footer ul li section ul li a{
+    color: #FAFAFA;
+}
+footer ul li section ul li a i{
+    margin: 0 .809rem;
+}
 footer p {
     padding: 1rem;
     line-height: 1.4rem;
 }
+
 footer p a {
     color: #FAFAFA;
 }

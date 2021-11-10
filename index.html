@@ -15,32 +15,33 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="icon" type="image/png" href="./icon.png">
-  <!-- Place favicon.ico in the root directory -->
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"
     integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css"> -->
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <meta name="theme-color" content="#fafafa">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Parisienne&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+
 </head>
 
 <body>
   <header>
     <nav>
       <a href="#"><img src="./icon.png" alt="logo Le Grenier à blé"></a>
-      
-      <ul>
+      <ul id="navigation1" class="navigation">
         <li><a href="#menu">Menu</a></li>
-        <li><a href="#acompte">Commandez</a></li>
+        <li><a href="#sur-mesure">Commandez</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -51,46 +52,49 @@
       <p>Fait par les Guyanais pour les Guyanais</p>
     </section>
     <section id="menu">
-      <h2>Mo faim!</h2>
+      <h2>Une envie?</h2>
       <ul>
         <li>
           <section>
-            <h3>Y salé</h3>
+            <h3>Quand on a goûté au salé, on ne peut plus manger sans sel</h3>
             <dl>
-              <dt> Une envie de salé</dt>
+              <dt>C'est doux et salé</dt>
               <dd>
                 <ul>
-                  <li>Quiche (epaule,lardon, fromage) - 2,85 € </li>
-                  <li>Croissant jambon / fromage (jambon epaule) - 2,60 €</li>
-                  <li>Chausson au poulet - 1,70 €</li>
-                  <li>Pain saucisse au poulet - 1,35 €</li>
-                  <li>Batonnet fromage - 1,00 €</li>
-                  <li>Paté sardine - 0,70 €</li>
-                  <li>Pate bœuf - 0,70 €</li>
-                  <li>Croque Mr (jambon epaule/ fromage) - 3,10 €</li>
+                  <li class="product"><span>Quiche (épaule,lardon, fromage)</span> <span>2,85€</span>
+                  </li>
+                  <li class="product"> <span>Croissant jambon / fromage (jambon épaule) </span> <span>2,60€</span>
+                  </li>
+                  <li class="product"> <span>Chausson au poulet</span> <span>1,70€</span> </li>
+                  <li class="product"> <span>Pain saucisse au poulet</span> <span>1,35€</span> </li>
+                  <li class="product"> <span>Bâtonnet fromage</span> <span>1,00€</span> </li>
+                  <li class="product"> <span>Pâté sardine</span> <span>0,70€</span> </li>
+                  <li class="product"> <span>Pâté bœuf</span> <span>0,70€</span> </li>
+                  <li class="product"> <span>Croque Mr (jambon épaule/ fromage)</span> <span>3,10€</span> </li>
                 </ul>
               </dd>
               <dt>Nos pizzas</dt>
               <dd>
                 <ul>
-                  <li>Pizza au Thon - 2,95 €</li>
-                  <li>Pizza au Jambon (jambon epaule/ fromage) - 2,95 €</li>
+                  <li class="product"> <span>Pizza au Thon</span> <span>2,95€</span></li>
+                  <li class="product"> <span>Pizza au Jambon (jambon épaule/ fromage)</span> <span>2,95€</span>
+                  </li>
                 </ul>
               </dd>
               <dt>Nos sandwichs</dt>
               <dd>
                 <ul>
-                  <li>Sandwich Thon - 3,90 €</li>
-                  <li>Sandwich Poulet - 3,90 €</li>
-                  <li>Sandwich steak - 3,90 €</li>
-                  <li>Sandwich jambon/fromage ( jambon epaule) - 3,50 €</li>
+                  <li class="product"><span>Sandwich Thon</span> <span>3,90€</span></li>
+                  <li class="product"><span>Sandwich Poulet</span> <span>3,90€</span></li>
+                  <li class="product"><span>Sandwich steak</span> <span>3,90€</span></li>
+                  <li class="product"><span>Sandwich jambon /fromage ( jambon épaule)</span> <span>3,50€</span></li>
                 </ul>
               </dd>
-              <dt>Nos pains</dt>
+              <dt>Nos pains nos gains</dt>
               <dd>
                 <ul>
-                  <li>Pain Lardon/jambon (jambon epaule) - 2,20 €</li>
-                  <li>Pain Poulet - 2,70 €</li>
+                  <li class="product"><span>Pain Lardon/jambon (jambon épaule)</span> <span>2,20€</span></li>
+                  <li class="product"><span>Pain Poulet</span> <span>2,70€</span></li>
                 </ul>
               </dd>
             </dl>
@@ -98,36 +102,36 @@
         </li>
         <li>
           <section>
-            <h3>Y sucré</h3>
+            <h3>Le bonheur, c'est comme le sucre à la crème</h3>
             <dl>
               <dt>Les bons classiques</dt>
               <dd>
                 <ul>
-                  <li>Pain chocolat normal - 1,10 €</li>
-                  <li>Croissant normal - 1,00 €</li>
-                  <li>Pain au raisin - 1,30 €</li>
-                  <li>Chausson au pomme - 1,15 €</li>
-                  <li>Pomme canelle - 1,10 €</li>
-                  <li>Canelle au chocolat - 1,50 €</li>
+                  <li class="product"><span>Pain chocolat normal</span> <span>1,10€</span> </li>
+                  <li class="product"><span>Croissant normal</span> <span>1,00€</span></li>
+                  <li class="product"><span>Pain au raisin</span> <span>1,30€</span> </li>
+                  <li class="product"><span>Chausson au pomme</span> <span>1,15€</span> </li>
+                  <li class="product"><span>Pomme cannelle</span> <span>1,10€</span></li>
+                  <li class="product"><span>Cannelle au chocolat</span> <span>1,50€</span> </li>
                 </ul>
               </dd>
               <dt>Les bons gourmands</dt>
               <dd>
                 <ul>
-                  <li>Pain chocolat au beurre - 1,30 €</li>
-                  <li>Croissant au beurre - 1,20 €</li>
-                  <li>Sacristin a la creme - 1,00 €</li>
-                  <li>Feuilleté creme de coco - 1,35 €</li>
-                  <li>Pepito - 1,35 €</li>
-                  <li>Pain naté - 1,45 €</li>
+                  <li class="product"><span>Pain chocolat au beurre</span> <span>1,30€</span></li>
+                  <li class="product"><span>Croissant au beurre</span> <span>1,20€</span></li>
+                  <li class="product"><span>Sacristin à la creme</span> <span>1,00€</span></li>
+                  <li class="product"><span>Feuilleté creme de coco</span> <span>1,35€</span> </li>
+                  <li class="product"><span>Pépito</span> <span>1,35€</span></li>
+                  <li class="product"><span>Pain naté</span> <span>1,45€</span></li>
                 </ul>
               </dd>
               <dt>Les petits gourmands</dt>
               <dd>
                 <ul>
-                  <li>Mini raisin - 0,65 €</li>
-                  <li>Mini chocolat - 0,60 €</li>
-                  <li>Mini croissant - 0,55 €</li>
+                  <li class="product"><span>Mini raisin</span> <span>0,65€</span></li>
+                  <li class="product"><span>Mini chocolat</span> <span>0,60€</span></li>
+                  <li class="product"><span>Mini croissant</span> <span>0,55€</span></li>
                 </ul>
               </dd>
             </dl>
@@ -136,60 +140,20 @@
       </ul>
     </section>
     <section id="sur-mesure">
-      <h2>Nos sur mesure</h2>
-      <img src="./img/products/g1.jpg" alt="">
-    </section>
-    </section>
-    <section id="acompte">
-      <h2>Payez votre acompte de 30,00€</h2>
-      <p>(Pour vos commandes personnalisées)</p>
-      <div id="smart-button-container">
-        <div style="text-align: center;">
-          <div id="paypal-button-container"></div>
-        </div>
+      <h2>Nos sur-mesure</h2>
+      <div class="carrousel">
+        <div><img src="./img/products/IMG_20190527_150259.jpg" alt="gateau sur sur-mesure"></div>
+        <div><img src="./img/products/IMG_20191019_122203.jpg" alt="gateau sur sur-mesure"></div>
+        <div><img src="./img/products/IMG_20200422_154453.jpg" alt="gateau sur sur-mesure"></div>
+        <div><img src="./img/products/IMG_20200814_232643.jpg" alt="gateau sur sur-mesure"></div>
+        <div><img src="./img/products/IMG_20200823_112354.jpg" alt="gateau sur sur-mesure"></div>
+        <div><img src="./img/products/IMG_20210709_072639.jpg" alt="gateau sur sur-mesure"></div>
+        <div><img src="./img/products/IMG_20211009_115735.jpg" alt="gateau sur sur-mesure"></div>
       </div>
-      <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=EUR"
-        data-sdk-integration-source="button-factory"></script>
-      <script>
-        function initPayPalButton() {
-          paypal.Buttons({
-            style: {
-              shape: 'rect',
-              color: 'gold',
-              layout: 'vertical',
-              label: 'paypal',
 
-            },
-
-            createOrder: function (data, actions) {
-              return actions.order.create({
-                purchase_units: [{ "amount": { "currency_code": "EUR", "value": 10.5 } }]
-              });
-            },
-
-            onApprove: function (data, actions) {
-              return actions.order.capture().then(function (orderData) {
-
-                // Full available details
-                console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-
-                // Show a success message within this page, e.g.
-                const element = document.getElementById('paypal-button-container');
-                element.innerHTML = '';
-                element.innerHTML = '<h3>Thank you for your payment!</h3>';
-
-                // Or go to another URL:  actions.redirect('thank_you.html');
-
-              });
-            },
-
-            onError: function (err) {
-              console.log(err);
-            }
-          }).render('#paypal-button-container');
-        }
-        initPayPalButton();
-      </script>
+      <p><a href="https://buy.stripe.com/test_28oaEKfMF2DS4WQcMM">Payez votre acompte de 30,00€</a>
+        <br>(Pour vos commandes personnalisées)
+      </p>
     </section>
   </main>
   <footer>
@@ -199,8 +163,10 @@
         <section>
           <h2>Suivez-nous sur:</h2>
           <ul>
-            <li><i class="fab fa-facebook-square"></i></li>
-            <li><i class="fab fa-instagram-square"></i></li>
+            <li><a href="https://www.facebook.com/Legrenierable/"><i class="fab fa-facebook-square"></i>Facebook</a>
+            </li>
+            <li><a href="https://www.instagram.com/le_grenierable/"><i class="fab fa-instagram-square"></i>Instagram</a>
+            </li>
           </ul>
         </section>
       </li>
@@ -210,14 +176,16 @@
           <ul>
             <li>
               <address>
-                Boulangerie-Pâtisserie Le Grenier à Blé <br>
+                Boulangerie - Pâtisserie <br>
+                Le Grenier à Blé <br>
                 1ère entrée cité Zéphir <br>
                 Route de Montabo <br>
                 97300 Cayenne
               </address>
             </li>
-            <li>Tél : 0594 29 10 25</li>
-            <li>Email: tsang.legab2006@gmail.com</li>
+            <li><a href="tel:+594 594 29 10 25">Tél : 0594 29 10 25</a></li>
+            <li><a href="mailto:tsang.legab2006@gmail.com">Email: tsang.legab2006@gmail.com</a></li>
+
           </ul>
         </section>
       </li>
@@ -225,9 +193,11 @@
     <p>&copy;Copyright - <a href="https://nicolarson.github.io/the_best_guiana_agency/">The Best Service of French
         Guiana</a> - 2022</p>
   </footer>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
