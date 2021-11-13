@@ -116,12 +116,11 @@ main section#sur-mesure {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
 }
 
 main section#sur-mesure h2 {
     text-align: center;
-    padding: 2rem 0 0;
+    padding: 2rem 0;
     margin: 0;
     font-size: 1.4rem;
     font-weight: bolder;
@@ -129,8 +128,8 @@ main section#sur-mesure h2 {
 
 main section#sur-mesure p {
     padding: 0 0 2rem;
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
     text-align: justify;
 }
 
