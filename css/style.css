@@ -1,6 +1,7 @@
 :root {
     --color-main: #aa7a63;
 }
+
 /* NAV */
 header nav {
     position: fixed;
@@ -33,13 +34,8 @@ header nav ul li a {
 
 /* WELCOME */
 main section#welcome {
-    height: calc(100vh);
+    height: 100vh;
     width: 100%;
-    /* background-image: url("../img/loaf-2436370_1920.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
 }
 
 main section#welcome {
@@ -51,7 +47,7 @@ main section#welcome {
     z-index: -1;
 }
 
-main section#welcome #welcomeVideo{
+main section#welcome #welcomeVideo {
     position: fixed;
     height: 100vh;
     min-width: 100vw;
@@ -74,9 +70,10 @@ main section#welcome p {
     text-align: center;
 }
 
-main div#parallax{
+main div#parallax {
     height: 100vh;
 }
+
 /* MENU */
 
 main section#menu {
@@ -248,7 +245,7 @@ footer p a {
 
 /* DESKTOP VERSION */
 
-@media screen and (min-width: 600px) {    
+@media screen and (min-width: 600px) {
     h2 {
         font-size: 3.2rem;
     }
@@ -284,9 +281,11 @@ footer p a {
         font-size: 1.214rem;
         padding: 0 4rem 0 0;
     }
-    header nav ul li a{
+
+    header nav ul li a {
         padding: 0;
     }
+
     /* WELCOME */
 
     main section#welcome h2 {
