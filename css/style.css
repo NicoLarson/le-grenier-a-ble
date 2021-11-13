@@ -1,7 +1,6 @@
 :root {
     --color-main: #aa7a63;
 }
-
 /* NAV */
 header nav {
     position: fixed;
@@ -36,18 +35,28 @@ header nav ul li a {
 main section#welcome {
     height: calc(100vh);
     width: 100%;
-    background-image: url("../img/loaf-2436370_1920.jpg");
+    /* background-image: url("../img/loaf-2436370_1920.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 
 main section#welcome {
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: -1;
+}
+
+main section#welcome #welcomeVideo{
+    position: fixed;
+    height: 100vh;
+    min-width: 100vw;
+    object-fit: cover;
+    z-index: -1;
 }
 
 main section#welcome h2 {
@@ -65,12 +74,15 @@ main section#welcome p {
     text-align: center;
 }
 
+main div#parallax{
+    height: 100vh;
+}
 /* MENU */
 
 main section#menu {
-    padding: 4rem 0;
+    padding: 4rem 20%;
     margin: 0 auto;
-    max-width: 60%;
+    background-color: #fff;
 }
 
 main section#menu h2 {
@@ -236,7 +248,7 @@ footer p a {
 
 /* DESKTOP VERSION */
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 600px) {    
     h2 {
         font-size: 3.2rem;
     }
@@ -260,8 +272,8 @@ footer p a {
     }
 
     header nav a img {
-        height: 8.09rem;
-        width: 8.09rem;
+        height: 4.854rem;
+        width: 4.854rem;
     }
 
     header nav ul {
@@ -269,20 +281,21 @@ footer p a {
     }
 
     header nav ul li {
-        font-size: 2rem;
+        font-size: 1.214rem;
         padding: 0 4rem 0 0;
     }
-
+    header nav ul li a{
+        padding: 0;
+    }
     /* WELCOME */
 
     main section#welcome h2 {
-        font-size: 12rem;
+        font-size: 8rem;
     }
 
     /* MENU */
     main>section#menu {
-        max-width: 60%;
-        padding: 12rem 0;
+        padding: 12rem 20%;
     }
 
     main section#menu>ul {
@@ -298,7 +311,7 @@ footer p a {
 
     /* SUR-MESURE */
     main section#sur-mesure {
-        padding: 8rem;
+        padding: 8rem 20%;
     }
 
     main section#sur-mesure h2 {
